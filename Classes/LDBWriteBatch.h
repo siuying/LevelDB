@@ -9,6 +9,8 @@
 
 #import "LevelDB.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface LDBWritebatch : NSObject
 
 @property (nonatomic, assign) id db;
@@ -37,7 +39,7 @@
  
  The instance's encoder block will *not* be used to produce a NSData instance from the provided value.
  
- @param value The raw data value to put in the database
+ @param data The raw data value to put in the database
  @param key The key at which the value can be found
  */
 - (void) setData:(NSData *)data forKey:(id)key;
@@ -50,17 +52,17 @@
  @param value The value to put in the database
  @param key The key at which the value can be found
  */
-- (void) setObject:(id)value forKey:(id)key;
+- (void) setObject:(nullable id)value forKey:(id)key;
 
 /**
  *  Same as `[self setObject:forKey:]`
  *   */
-- (void) setObject:(id)value forKeyedSubscript:(id)key;
+- (void) setObject:(nullable id)value forKeyedSubscript:(id)key;
 
 /**
  Same as `[self setObject:forKey:]`
  */
-- (void) setValue:(id)value forKey:(NSString *)key;
+- (void) setValue:(nullable id)value forKey:(NSString *)key;
 
 /**
  Take all key-value pairs in the provided dictionary and insert them in the database
@@ -75,3 +77,5 @@
 - (void) apply;
 
 @end
+
+NS_ASSUME_NONNULL_END

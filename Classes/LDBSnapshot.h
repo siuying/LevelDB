@@ -10,6 +10,8 @@
 
 @class LevelDB;
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface LDBSnapshot : NSObject 
 
 @property (nonatomic, readonly, assign) LevelDB * db;
@@ -91,9 +93,9 @@
  @param block The enumeration block used when iterating over all the keys. It takes two arguments: the first is a pointer to a `LevelDBKey` struct. You can convert this to a `NSString` or `NSData` instance, using `NSDataFromLevelDBKey(LevelDBKey *key)` and `NSStringFromLevelDBKey(LevelDBKey *key)` respectively. The second arguments to the block is a `BOOL *` that can be used to stop enumeration at any time (e.g. `*stop = TRUE;`).
  */
 - (void) enumerateKeysBackward:(BOOL)backward
-                 startingAtKey:(id)key
-           filteredByPredicate:(NSPredicate *)predicate
-                     andPrefix:(id)prefix
+                 startingAtKey:(nullable id)key
+           filteredByPredicate:(nullable NSPredicate *)predicate
+                     andPrefix:(nullable id)prefix
                     usingBlock:(LevelDBKeyBlock)block;
 
 /**
@@ -116,9 +118,9 @@
  */
 - (void) enumerateKeysAndObjectsBackward:(BOOL)backward
                                   lazily:(BOOL)lazily
-                           startingAtKey:(id)key
-                     filteredByPredicate:(NSPredicate *)predicate
-                               andPrefix:(id)prefix
+                           startingAtKey:(nullable id)key
+                     filteredByPredicate:(nullable NSPredicate *)predicate
+                               andPrefix:(nullable id)prefix
                               usingBlock:(id)block;
 
 /**
@@ -128,3 +130,5 @@
  */
 - (void) close;
 @end
+
+NS_ASSUME_NONNULL_END

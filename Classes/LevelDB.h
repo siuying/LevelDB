@@ -51,6 +51,8 @@ NSData   * NSDataFromLevelDBKey  (LevelDBKey * key);
 }
 #endif
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface LevelDB : NSObject
 
 ///------------------------------------------------------------------------
@@ -152,17 +154,17 @@ NSData   * NSDataFromLevelDBKey  (LevelDBKey * key);
  @param value The value to put in the database
  @param key The key at which the value can be found
  */
-- (void) setObject:(id)value forKey:(id)key;
+- (void) setObject:(nullable id)value forKey:(id)key;
 
 /**
  Same as `[self setObject:forKey:]`
  */
-- (void) setObject:(id)value forKeyedSubscript:(id)key;
+- (void) setObject:(nullable id)value forKeyedSubscript:(id)key;
 
 /**
  Same as `[self setObject:forKey:]`
  */
-- (void) setValue:(id)value forKey:(NSString *)key ;
+- (void) setValue:(nullable id)value forKey:(NSString *)key ;
 
 /**
  Take all key-value pairs in the provided dictionary and insert them in the database
@@ -252,7 +254,7 @@ NSData   * NSDataFromLevelDBKey  (LevelDBKey * key);
  
  @param prefix The key prefix used to remove all matching keys (of type `NSString` or `NSData`)
  */
-- (void) removeAllObjectsWithPrefix:(id)prefix;
+- (void) removeAllObjectsWithPrefix:(nullable id)prefix;
 
 #pragma mark - Selection
 
@@ -307,10 +309,10 @@ NSData   * NSDataFromLevelDBKey  (LevelDBKey * key);
  @param block The enumeration block used when iterating over all the keys. It takes two arguments: the first is a pointer to a `LevelDBKey` struct. You can convert this to a `NSString` or `NSData` instance, using `NSDataFromLevelDBKey(LevelDBKey *key)` and `NSStringFromLevelDBKey(LevelDBKey *key)` respectively. The second arguments to the block is a `BOOL *` that can be used to stop enumeration at any time (e.g. `*stop = TRUE;`).
  */
 - (void) enumerateKeysBackward:(BOOL)backward
-                 startingAtKey:(id)key
-           filteredByPredicate:(NSPredicate *)predicate
-                     andPrefix:(id)prefix
-                    usingBlock:(LevelDBKeyBlock)block;
+                 startingAtKey:(nullable id)key
+           filteredByPredicate:(nullable NSPredicate *)predicate
+                     andPrefix:(nullable id)prefix
+                    usingBlock:(nullable LevelDBKeyBlock)block;
 
 
 /**
@@ -333,9 +335,10 @@ NSData   * NSDataFromLevelDBKey  (LevelDBKey * key);
  */
 - (void) enumerateKeysAndObjectsBackward:(BOOL)backward
                                   lazily:(BOOL)lazily
-                           startingAtKey:(id)key
-                     filteredByPredicate:(NSPredicate *)predicate
-                               andPrefix:(id)prefix
+                           startingAtKey:(nullable id)key
+                     filteredByPredicate:(nullable NSPredicate *)predicate
+                               andPrefix:(nullable id)prefix
                               usingBlock:(LevelDBKeyValueBlock)block;
 
 @end
+NS_ASSUME_NONNULL_END
