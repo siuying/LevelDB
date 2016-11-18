@@ -9,8 +9,8 @@
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "1DC09220-33DB-482B-AA2F-CAB4A3718827",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "AB7BFB0E68DAB4502B1D5CEB6E939577D0ADDBBA" : "Objective-LevelDB\/",
-    "BDF394AD00F0672C031FDA5A297CD80086AC8A54" : "Objective-LevelDB\/vendor\/leveldb\/"
+    "AB7BFB0E68DAB4502B1D5CEB6E939577D0ADDBBA" : "LevelDB\/",
+    "BDF394AD00F0672C031FDA5A297CD80086AC8A54" : "LevelDB\/vendor\/leveldb\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "ObjectiveLevelDB",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,

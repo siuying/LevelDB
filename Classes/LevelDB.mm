@@ -567,7 +567,7 @@ LevelDBOptions MakeLevelDBOptions() {
                           startingAtKey:(id)key
                     filteredByPredicate:(NSPredicate *)predicate
                               andPrefix:(id)prefix
-                             usingBlock:(id)block {
+                             usingBlock:(LevelDBKeyValueBlock)block {
     
     [self enumerateKeysAndObjectsBackward:backward
                                    lazily:lazily
@@ -584,7 +584,7 @@ LevelDBOptions MakeLevelDBOptions() {
                      filteredByPredicate:(NSPredicate *)predicate
                                andPrefix:(id)prefix
                             withSnapshot:(LDBSnapshot *)snapshot
-                              usingBlock:(id)block{
+                              usingBlock:(LevelDBKeyValueBlock)block{
     
     AssertDBExists(db);
     MaybeAddSnapshotToOptions(readOptions, readOptionsPtr, snapshot);
