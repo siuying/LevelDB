@@ -9,7 +9,7 @@ Based on [Objective-LevelDB](https://github.com/matehat/Objective-LevelDB)
 Add to your carthage file:
 
 ```
-github "siuying/Objective-LevelDB"
+github "siuying/LevelDB"
 ```
 
 ## How to use
