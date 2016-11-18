@@ -1,22 +1,14 @@
 workspace '../Objective-LevelDB'
 inhibit_all_warnings!
 
-def import_pods
-  pod "Objective-LevelDB", :path => "../Objective-LevelDB.podspec"
-end
-
 if ENV["TEST_ENV"] == "OSX"
   xcodeproj 'Objective-LevelDB OS X Tests'
-  target :osx do
+  target :'OS X Tests' do
     platform :osx, '10.9'
-    link_with 'OS X Tests'
-    import_pods
   end
 else
   xcodeproj 'Objective-LevelDB iOS Tests'
-  target :ios do
+  target :'iOS Tests' do
     platform :ios, '7.0'
-    link_with 'iOS Tests'
-    import_pods
   end
 end
