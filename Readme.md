@@ -2,17 +2,15 @@
 
 An Objective-C database library built over [Google's LevelDB](http://code.google.com/p/leveldb), a fast embedded key-value store written by Google.
 
+Based on [Objective-LevelDB](https://github.com/matehat/Objective-LevelDB)
+
 ## Installation
 
-By far, the easiest way to integrate this library in your project is by using [CocoaPods][1].
+Add to your carthage file:
 
-1. Have [Cocoapods][1] installed, if you don't already
-2. In your Podfile, add the line 
-
-        pod 'Objective-LevelDB'
-
-3. Run `pod install`
-4. Make something awesome.
+```
+github "siuying/Objective-LevelDB"
+```
 
 ## How to use
 
@@ -64,12 +62,12 @@ All available methods can be found in its [header file](https://github.com/mateh
                               lazily:TRUE       // Block below will have a block(void) instead of id argument for value
                        startingAtKey:someKey    // Start iteration there (NSString or NSData)
                  filteredByPredicate:predicate  // Only iterate over values matching NSPredicate
-                           andPrefix:prefix     // Only iterate over keys prefixed with something 
+                           andPrefix:prefix     // Only iterate over keys prefixed with something
                           usingBlock:^(LevelDBKey *key, void(^valueGetter)(void), BOOL *stop) {
-                             
+
     NSString *keyString = NSStringFromLevelDBKey(key);
-    
-    // If we had wanted the value directly instead of a valueGetter block, we would've set the 
+
+    // If we had wanted the value directly instead of a valueGetter block, we would've set the
     // above 'lazily' argument to FALSE
     id value = valueGetter();
 }]
@@ -78,7 +76,7 @@ More iteration methods are available, just have a look at the [header section](h
 
 ##### Snapshots, NSDictionary-like API (immutable)
 
-A snapshot is a readonly interface to the database, permanently reflecting the state of 
+A snapshot is a readonly interface to the database, permanently reflecting the state of
 the database when it was created, even if the database changes afterwards.
 
 ```objective-c
@@ -104,7 +102,7 @@ LDBWritebatch *wb = [ldb newWritebatch];
 [wb removeObjectForKey:@"dict_test"];
 
 // Those changes aren't yet applied to ldb
-// To apply them in batch, 
+// To apply them in batch,
 [wb apply];
 ```
 
@@ -140,16 +138,16 @@ db.useCache = false; // Do not use DB cache when reading data (default to true);
 ##### Concurrency
 
 As [Google's documentation states][2], updates and reads from a leveldb instance do not require external synchronization
-to be thread-safe. Write batches do, and we've taken care of it, by isolating every `LDBWritebatch` it inside a serial dispatch 
+to be thread-safe. Write batches do, and we've taken care of it, by isolating every `LDBWritebatch` it inside a serial dispatch
 queue, and making every request dispatch *synchronously* to it. So use it from wherever you want, it'll just work.
 
-However, if you are using something like JSONKit for encoding data to JSON in the database, and you are clever enough to 
+However, if you are using something like JSONKit for encoding data to JSON in the database, and you are clever enough to
 preallocate a `JSONDecoder` instance for all data decoding, beware that this particular object is *not* thread-safe, and you will
 need to take care of it manually.
 
 ### Testing
 
-If you want to run the tests, you will need Xcode 5, as the test suite uses the new XCTest. 
+If you want to run the tests, you will need Xcode 5, as the test suite uses the new XCTest.
 
 Clone this repository and, once in it,
 

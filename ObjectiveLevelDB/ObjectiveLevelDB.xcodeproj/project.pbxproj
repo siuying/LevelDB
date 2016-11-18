@@ -176,9 +176,9 @@
 		54352A651DDEE47800F4B8DB /* status.cc in Sources */ = {isa = PBXBuildFile; fileRef = 543529981DDEE47800F4B8DB /* status.cc */; };
 		54352A661DDEE47800F4B8DB /* status.cc in Sources */ = {isa = PBXBuildFile; fileRef = 543529981DDEE47800F4B8DB /* status.cc */; };
 		54352A761DDEE80200F4B8DB /* ObjectiveLevelDBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54352A751DDEE80200F4B8DB /* ObjectiveLevelDBTests.swift */; };
-		54352A781DDEE80200F4B8DB /* ObjectiveLevelDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5435278F1DDEE21100F4B8DB /* ObjectiveLevelDB.framework */; };
+		54352A781DDEE80200F4B8DB /* LevelDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5435278F1DDEE21100F4B8DB /* LevelDB.framework */; };
 		54352A851DDEE80C00F4B8DB /* ObjectiveLevelDBTests_OSX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54352A841DDEE80C00F4B8DB /* ObjectiveLevelDBTests_OSX.swift */; };
-		54352A871DDEE80C00F4B8DB /* ObjectiveLevelDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5435279F1DDEE23000F4B8DB /* ObjectiveLevelDB.framework */; };
+		54352A871DDEE80C00F4B8DB /* LevelDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5435279F1DDEE23000F4B8DB /* LevelDB.framework */; };
 		54352A8D1DDEE81700F4B8DB /* BaseTestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 543527BF1DDEE32A00F4B8DB /* BaseTestClass.m */; };
 		54352A8E1DDEE81700F4B8DB /* Dummy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 543527C01DDEE32A00F4B8DB /* Dummy.cpp */; };
 		54352A8F1DDEE81700F4B8DB /* MainTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 543527C21DDEE32A00F4B8DB /* MainTests.m */; };
@@ -209,10 +209,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5435278F1DDEE21100F4B8DB /* ObjectiveLevelDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObjectiveLevelDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5435278F1DDEE21100F4B8DB /* LevelDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LevelDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		543527921DDEE21100F4B8DB /* ObjectiveLevelDB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectiveLevelDB.h; sourceTree = "<group>"; };
 		543527931DDEE21100F4B8DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5435279F1DDEE23000F4B8DB /* ObjectiveLevelDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObjectiveLevelDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5435279F1DDEE23000F4B8DB /* LevelDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LevelDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		543527A11DDEE23000F4B8DB /* ObjectiveLevelDB_OSX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectiveLevelDB_OSX.h; sourceTree = "<group>"; };
 		543527A21DDEE23000F4B8DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		543527A81DDEE31F00F4B8DB /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
@@ -227,7 +227,6 @@
 		543527C01DDEE32A00F4B8DB /* Dummy.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Dummy.cpp; sourceTree = "<group>"; };
 		543527C11DDEE32A00F4B8DB /* Dummy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dummy.h; sourceTree = "<group>"; };
 		543527C21DDEE32A00F4B8DB /* MainTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTests.m; sourceTree = "<group>"; };
-		543527C31DDEE32A00F4B8DB /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		543527C41DDEE32A00F4B8DB /* SnapshotsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SnapshotsTests.m; sourceTree = "<group>"; };
 		543527C51DDEE32A00F4B8DB /* WritebatchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WritebatchTests.m; sourceTree = "<group>"; };
 		543529311DDEE47800F4B8DB /* builder.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = builder.cc; sourceTree = "<group>"; };
@@ -334,7 +333,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54352A781DDEE80200F4B8DB /* ObjectiveLevelDB.framework in Frameworks */,
+				54352A781DDEE80200F4B8DB /* LevelDB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,7 +341,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54352A871DDEE80C00F4B8DB /* ObjectiveLevelDB.framework in Frameworks */,
+				54352A871DDEE80C00F4B8DB /* LevelDB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,8 +365,8 @@
 		543527901DDEE21100F4B8DB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5435278F1DDEE21100F4B8DB /* ObjectiveLevelDB.framework */,
-				5435279F1DDEE23000F4B8DB /* ObjectiveLevelDB.framework */,
+				5435278F1DDEE21100F4B8DB /* LevelDB.framework */,
+				5435279F1DDEE23000F4B8DB /* LevelDB.framework */,
 				54352A731DDEE80200F4B8DB /* ObjectiveLevelDBTests.xctest */,
 				54352A821DDEE80C00F4B8DB /* ObjectiveLevelDBTests_OSX.xctest */,
 			);
@@ -415,7 +414,6 @@
 				543527C01DDEE32A00F4B8DB /* Dummy.cpp */,
 				543527C11DDEE32A00F4B8DB /* Dummy.h */,
 				543527C21DDEE32A00F4B8DB /* MainTests.m */,
-				543527C31DDEE32A00F4B8DB /* Podfile */,
 				543527C41DDEE32A00F4B8DB /* SnapshotsTests.m */,
 				543527C51DDEE32A00F4B8DB /* WritebatchTests.m */,
 			);
@@ -661,9 +659,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		5435278E1DDEE21100F4B8DB /* ObjectiveLevelDB_iOS */ = {
+		5435278E1DDEE21100F4B8DB /* LevelDB_iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 543527971DDEE21100F4B8DB /* Build configuration list for PBXNativeTarget "ObjectiveLevelDB_iOS" */;
+			buildConfigurationList = 543527971DDEE21100F4B8DB /* Build configuration list for PBXNativeTarget "LevelDB_iOS" */;
 			buildPhases = (
 				5435278A1DDEE21100F4B8DB /* Sources */,
 				5435278B1DDEE21100F4B8DB /* Frameworks */,
@@ -674,14 +672,14 @@
 			);
 			dependencies = (
 			);
-			name = ObjectiveLevelDB_iOS;
+			name = LevelDB_iOS;
 			productName = ObjectiveLevelDB;
-			productReference = 5435278F1DDEE21100F4B8DB /* ObjectiveLevelDB.framework */;
+			productReference = 5435278F1DDEE21100F4B8DB /* LevelDB.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		5435279E1DDEE23000F4B8DB /* ObjectiveLevelDB_OSX */ = {
+		5435279E1DDEE23000F4B8DB /* LevelDB_OSX */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 543527A41DDEE23000F4B8DB /* Build configuration list for PBXNativeTarget "ObjectiveLevelDB_OSX" */;
+			buildConfigurationList = 543527A41DDEE23000F4B8DB /* Build configuration list for PBXNativeTarget "LevelDB_OSX" */;
 			buildPhases = (
 				5435279A1DDEE23000F4B8DB /* Sources */,
 				5435279B1DDEE23000F4B8DB /* Frameworks */,
@@ -692,9 +690,9 @@
 			);
 			dependencies = (
 			);
-			name = ObjectiveLevelDB_OSX;
+			name = LevelDB_OSX;
 			productName = ObjectiveLevelDB_OSX;
-			productReference = 5435279F1DDEE23000F4B8DB /* ObjectiveLevelDB.framework */;
+			productReference = 5435279F1DDEE23000F4B8DB /* LevelDB.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		54352A721DDEE80200F4B8DB /* ObjectiveLevelDBTests */ = {
@@ -777,8 +775,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5435278E1DDEE21100F4B8DB /* ObjectiveLevelDB_iOS */,
-				5435279E1DDEE23000F4B8DB /* ObjectiveLevelDB_OSX */,
+				5435278E1DDEE21100F4B8DB /* LevelDB_iOS */,
+				5435279E1DDEE23000F4B8DB /* LevelDB_OSX */,
 				54352A721DDEE80200F4B8DB /* ObjectiveLevelDBTests */,
 				54352A811DDEE80C00F4B8DB /* ObjectiveLevelDBTests_OSX */,
 			);
@@ -950,12 +948,12 @@
 /* Begin PBXTargetDependency section */
 		54352A7A1DDEE80200F4B8DB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5435278E1DDEE21100F4B8DB /* ObjectiveLevelDB_iOS */;
+			target = 5435278E1DDEE21100F4B8DB /* LevelDB_iOS */;
 			targetProxy = 54352A791DDEE80200F4B8DB /* PBXContainerItemProxy */;
 		};
 		54352A891DDEE80C00F4B8DB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5435279E1DDEE23000F4B8DB /* ObjectiveLevelDB_OSX */;
+			target = 5435279E1DDEE23000F4B8DB /* LevelDB_OSX */;
 			targetProxy = 54352A881DDEE80C00F4B8DB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1085,7 +1083,7 @@
 				OTHER_LDFLAGS = "-lc++";
 				PRODUCT_BUNDLE_IDENTIFIER = com.goodnotesapp.ObjectiveLevelDB;
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
-				PRODUCT_NAME = ObjectiveLevelDB;
+				PRODUCT_NAME = LevelDB;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 				USER_HEADER_SEARCH_PATHS = "";
@@ -1115,7 +1113,7 @@
 				OTHER_LDFLAGS = "-lc++";
 				PRODUCT_BUNDLE_IDENTIFIER = com.goodnotesapp.ObjectiveLevelDB;
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
-				PRODUCT_NAME = ObjectiveLevelDB;
+				PRODUCT_NAME = LevelDB;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 				USER_HEADER_SEARCH_PATHS = "";
@@ -1150,7 +1148,7 @@
 				OTHER_LDFLAGS = "-lc++";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.goodnotesapp.ObjectiveLevelDB-OSX";
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
-				PRODUCT_NAME = ObjectiveLevelDB;
+				PRODUCT_NAME = LevelDB;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -1183,7 +1181,7 @@
 				OTHER_LDFLAGS = "-lc++";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.goodnotesapp.ObjectiveLevelDB-OSX";
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
-				PRODUCT_NAME = ObjectiveLevelDB;
+				PRODUCT_NAME = LevelDB;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -1258,7 +1256,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		543527971DDEE21100F4B8DB /* Build configuration list for PBXNativeTarget "ObjectiveLevelDB_iOS" */ = {
+		543527971DDEE21100F4B8DB /* Build configuration list for PBXNativeTarget "LevelDB_iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				543527981DDEE21100F4B8DB /* Debug */,
@@ -1267,7 +1265,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		543527A41DDEE23000F4B8DB /* Build configuration list for PBXNativeTarget "ObjectiveLevelDB_OSX" */ = {
+		543527A41DDEE23000F4B8DB /* Build configuration list for PBXNativeTarget "LevelDB_OSX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				543527A51DDEE23000F4B8DB /* Debug */,
