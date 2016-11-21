@@ -1079,6 +1079,7 @@
 				);
 				INFOPLIST_FILE = ObjectiveLevelDB/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = "-lc++";
 				PRODUCT_BUNDLE_IDENTIFIER = com.goodnotesapp.ObjectiveLevelDB;
@@ -1109,6 +1110,7 @@
 				);
 				INFOPLIST_FILE = ObjectiveLevelDB/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = "-lc++";
 				PRODUCT_BUNDLE_IDENTIFIER = com.goodnotesapp.ObjectiveLevelDB;
@@ -1144,7 +1146,7 @@
 				INFOPLIST_FILE = ObjectiveLevelDB_OSX/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_LDFLAGS = "-lc++";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.goodnotesapp.ObjectiveLevelDB-OSX";
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
@@ -1177,7 +1179,7 @@
 				INFOPLIST_FILE = ObjectiveLevelDB_OSX/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_LDFLAGS = "-lc++";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.goodnotesapp.ObjectiveLevelDB-OSX";
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
@@ -1193,6 +1195,7 @@
 			buildSettings = {
 				DEVELOPMENT_TEAM = 5UAR78B6YU;
 				INFOPLIST_FILE = ObjectiveLevelDBTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.goodnotesapp.ObjectiveLevelDBTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1205,6 +1208,7 @@
 			buildSettings = {
 				DEVELOPMENT_TEAM = 5UAR78B6YU;
 				INFOPLIST_FILE = ObjectiveLevelDBTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.goodnotesapp.ObjectiveLevelDBTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1220,7 +1224,7 @@
 				DEVELOPMENT_TEAM = 5UAR78B6YU;
 				INFOPLIST_FILE = ObjectiveLevelDBTests_OSX/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.goodnotesapp.ObjectiveLevelDBTests-OSX";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -1236,7 +1240,7 @@
 				DEVELOPMENT_TEAM = 5UAR78B6YU;
 				INFOPLIST_FILE = ObjectiveLevelDBTests_OSX/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.goodnotesapp.ObjectiveLevelDBTests-OSX";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -1281,6 +1285,7 @@
 				54352A7D1DDEE80200F4B8DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		54352A8A1DDEE80C00F4B8DB /* Build configuration list for PBXNativeTarget "ObjectiveLevelDBTests_OSX" */ = {
 			isa = XCConfigurationList;
@@ -1289,6 +1294,7 @@
 				54352A8C1DDEE80C00F4B8DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
